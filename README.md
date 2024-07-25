@@ -1,2 +1,3 @@
-# UNet2D_BraTs
+# UNet with Resnet
  
+The U-Net model can complete model training well in the case of a small amount of data annotated medical imaging datasets, and the residual module can solve the problems of gradient vanishing and gradient exploding. Therefore,  I made the DeepResUnet model, which replaces some convolutional layers in the U-Net model with residual modules for medical imaging lesion segmentation. This paper uses the BraTS 2018 brain tumor imaging dataset to conduct a brain tumor segmentation comparison experiment based on the U-Net and DeepResUnet deep learning segmentation models. The experimental results show that the DeepResUnet model improves DSC by 2.79% when segmenting all brain tumors, 3.27% when segmenting the core part of the tumor, and 3.88% when segmenting enhanced tumors. The model can effectively improve the segmentation performance and has a more superior performance in brain tumor image lesion segmentation.
